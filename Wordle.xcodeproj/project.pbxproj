@@ -20,6 +20,8 @@
 		96606D0C2988C0FE0045362C /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D0B2988C0FE0045362C /* GuessView.swift */; };
 		96606D0F2988CC7C0045362C /* WordleDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D0E2988CC7C0045362C /* WordleDataModel.swift */; };
 		96606D112988D5AB0045362C /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D102988D5AB0045362C /* Global.swift */; };
+		96BD63802988ED7D000CFCF7 /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD637F2988ED7D000CFCF7 /* LetterButtonView.swift */; };
+		96BD63822988EFF0000CFCF7 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63812988EFF0000CFCF7 /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		96606D0B2988C0FE0045362C /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		96606D0E2988CC7C0045362C /* WordleDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleDataModel.swift; sourceTree = "<group>"; };
 		96606D102988D5AB0045362C /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		96BD637F2988ED7D000CFCF7 /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
+		96BD63812988EFF0000CFCF7 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 			children = (
 				96606C9D29887BA60045362C /* GameView.swift */,
 				96606D0B2988C0FE0045362C /* GuessView.swift */,
+				96BD637F2988ED7D000CFCF7 /* LetterButtonView.swift */,
+				96BD63812988EFF0000CFCF7 /* KeyboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BD63802988ED7D000CFCF7 /* LetterButtonView.swift in Sources */,
 				96606C9E29887BA60045362C /* GameView.swift in Sources */,
 				96606D0C2988C0FE0045362C /* GuessView.swift in Sources */,
+				96BD63822988EFF0000CFCF7 /* KeyboardView.swift in Sources */,
 				96606D092988BD870045362C /* Guess.swift in Sources */,
 				96606D062988BC310045362C /* Color+Extension.swift in Sources */,
 				96606D0F2988CC7C0045362C /* WordleDataModel.swift in Sources */,
