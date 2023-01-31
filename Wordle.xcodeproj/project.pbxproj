@@ -22,6 +22,7 @@
 		96606D112988D5AB0045362C /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D102988D5AB0045362C /* Global.swift */; };
 		96BD63802988ED7D000CFCF7 /* LetterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD637F2988ED7D000CFCF7 /* LetterButtonView.swift */; };
 		96BD63822988EFF0000CFCF7 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63812988EFF0000CFCF7 /* KeyboardView.swift */; };
+		96BD63862989B7AD000CFCF7 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63852989B7AD000CFCF7 /* Shake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		96606D102988D5AB0045362C /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		96BD637F2988ED7D000CFCF7 /* LetterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterButtonView.swift; sourceTree = "<group>"; };
 		96BD63812988EFF0000CFCF7 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		96BD63852989B7AD000CFCF7 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +113,12 @@
 		96606C9A29887BA60045362C /* Wordle */ = {
 			isa = PBXGroup;
 			children = (
+				96606C9B29887BA60045362C /* WordleApp.swift */,
 				96606D0D2988CC6D0045362C /* ViewModels */,
 				96606D072988BD750045362C /* Models */,
 				96606D0A2988C0ED0045362C /* Views */,
 				96606D042988BC0E0045362C /* Extensions */,
-				96606C9B29887BA60045362C /* WordleApp.swift */,
+				96BD63842989B78B000CFCF7 /* Animations */,
 				96606C9F29887BA80045362C /* Assets.xcassets */,
 				96606CC629887C630045362C /* Launch Screen.storyboard */,
 				96606CA129887BA80045362C /* Wordle.entitlements */,
@@ -183,6 +186,14 @@
 				96606D0E2988CC7C0045362C /* WordleDataModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		96BD63842989B78B000CFCF7 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				96BD63852989B7AD000CFCF7 /* Shake.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +333,7 @@
 				96BD63822988EFF0000CFCF7 /* KeyboardView.swift in Sources */,
 				96606D092988BD870045362C /* Guess.swift in Sources */,
 				96606D062988BC310045362C /* Color+Extension.swift in Sources */,
+				96BD63862989B7AD000CFCF7 /* Shake.swift in Sources */,
 				96606D0F2988CC7C0045362C /* WordleDataModel.swift in Sources */,
 				96606C9C29887BA60045362C /* WordleApp.swift in Sources */,
 				96606D112988D5AB0045362C /* Global.swift in Sources */,
