@@ -24,6 +24,9 @@
 		96BD63822988EFF0000CFCF7 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63812988EFF0000CFCF7 /* KeyboardView.swift */; };
 		96BD63862989B7AD000CFCF7 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63852989B7AD000CFCF7 /* Shake.swift */; };
 		96BD6388299194BC000CFCF7 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD6387299194BC000CFCF7 /* FlipView.swift */; };
+		96BD638C29919F66000CFCF7 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD638B29919F66000CFCF7 /* ToastView.swift */; };
+		96BD63902991AB90000CFCF7 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD638F2991AB90000CFCF7 /* Statistic.swift */; };
+		96BD63922991B538000CFCF7 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63912991B538000CFCF7 /* StatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		96BD63812988EFF0000CFCF7 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		96BD63852989B7AD000CFCF7 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		96BD6387299194BC000CFCF7 /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
+		96BD638B29919F66000CFCF7 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		96BD638F2991AB90000CFCF7 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
+		96BD63912991B538000CFCF7 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 			children = (
 				96606D082988BD870045362C /* Guess.swift */,
 				96606D102988D5AB0045362C /* Global.swift */,
+				96BD638F2991AB90000CFCF7 /* Statistic.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -178,6 +185,8 @@
 				96606D0B2988C0FE0045362C /* GuessView.swift */,
 				96BD637F2988ED7D000CFCF7 /* LetterButtonView.swift */,
 				96BD63812988EFF0000CFCF7 /* KeyboardView.swift */,
+				96BD638B29919F66000CFCF7 /* ToastView.swift */,
+				96BD63912991B538000CFCF7 /* StatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +343,7 @@
 				96BD6388299194BC000CFCF7 /* FlipView.swift in Sources */,
 				96606C9E29887BA60045362C /* GameView.swift in Sources */,
 				96606D0C2988C0FE0045362C /* GuessView.swift in Sources */,
+				96BD638C29919F66000CFCF7 /* ToastView.swift in Sources */,
 				96BD63822988EFF0000CFCF7 /* KeyboardView.swift in Sources */,
 				96606D092988BD870045362C /* Guess.swift in Sources */,
 				96606D062988BC310045362C /* Color+Extension.swift in Sources */,
@@ -341,6 +351,8 @@
 				96606D0F2988CC7C0045362C /* WordleDataModel.swift in Sources */,
 				96606C9C29887BA60045362C /* WordleApp.swift in Sources */,
 				96606D112988D5AB0045362C /* Global.swift in Sources */,
+				96BD63922991B538000CFCF7 /* StatsView.swift in Sources */,
+				96BD63902991AB90000CFCF7 /* Statistic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

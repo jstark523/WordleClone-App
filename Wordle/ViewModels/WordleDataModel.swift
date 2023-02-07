@@ -10,6 +10,8 @@ import SwiftUI
 class WordleDataModel: ObservableObject{
     @Published var guesses: [Guess] = []
     @Published var incorrectAttempts = [Int](repeating: 0, count: 6)
+    @Published var toastText: String?
+    @Published var showStats = false
     
     var keyColors = [String: Color]()
     var matchedLetters = [String]()
@@ -19,6 +21,8 @@ class WordleDataModel: ObservableObject{
     var tryIndex = 0
     var inPlay = false
     var gameOver = false
+    var toastWords = ["Genius", "Magnificent", "Impressive", "Splendid", "Great", "Phew."]
+    var currentStat: Statistic
     
     var gameStarted: Bool{
         !currentWord.isEmpty || tryIndex > 0
@@ -30,6 +34,7 @@ class WordleDataModel: ObservableObject{
     
     //MARK: Setup
     init(){
+        currentStat = Statistic.loadStat()
         newGame()
     }
     
@@ -40,6 +45,7 @@ class WordleDataModel: ObservableObject{
         inPlay = true
         tryIndex = 0
         gameOver = false
+        print(selectedWord)
     }
 
     func populateDefaults(){
@@ -64,6 +70,8 @@ class WordleDataModel: ObservableObject{
     func enterWord(){
         if currentWord == selectedWord{
             gameOver = true
+            currentStat.update(win: true, index: tryIndex)
+            showToast(text: toastWords[tryIndex])
             print("You Win")
             setCurrentGuessColors()
             inPlay = false
@@ -79,13 +87,15 @@ class WordleDataModel: ObservableObject{
                 if tryIndex == 6{
                     gameOver = true
                     inPlay = false
-                    print("you lose")
+                    currentStat.update(win: false)
+                    showToast(text: selectedWord)
                 }
             }
             else{
                 withAnimation{
                     self.incorrectAttempts[tryIndex] += 1
                 }
+                showToast(text: "Not in word list.")
                 incorrectAttempts[tryIndex] = 0
             }
         }
@@ -130,10 +140,11 @@ class WordleDataModel: ObservableObject{
         }
         for index in 0...4{
             let guessLetter = guesses[tryIndex].guessLetters[index]
-            if correctLetters.contains(guessLetter) && guesses[tryIndex].bgColors[index] != .correct
-            && frequency[guessLetter]! > 0{
+            if correctLetters.contains(guessLetter)
+                && guesses[tryIndex].bgColors[index] != .correct
+                && frequency[guessLetter]! > 0  {
                 guesses[tryIndex].bgColors[index] = .misplaced
-                if(!misplacedLetters.contains(guessLetter) && matchedLetters.contains(guessLetter)){
+                if !misplacedLetters.contains(guessLetter) && !matchedLetters.contains(guessLetter){
                     misplacedLetters.append(guessLetter)
                     keyColors[guessLetter] = .misplaced
                 }
@@ -154,6 +165,20 @@ class WordleDataModel: ObservableObject{
         for col in 0...4{
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(col) * 0.2){
                 self.guesses[row].cardFlipped[col].toggle()
+            }
+        }
+    }
+    
+    func showToast(text: String?){
+        withAnimation{
+            toastText = text
+        }
+        withAnimation(Animation.linear(duration: 0.2).delay(3)){
+            toastText = nil
+            if gameOver {
+                withAnimation(Animation.linear(duration: 0.2).delay(3)){
+                    showStats.toggle()
+                }
             }
         }
     }
