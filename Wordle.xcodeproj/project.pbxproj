@@ -30,6 +30,7 @@
 		96BD63942992D4E9000CFCF7 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63932992D4E9000CFCF7 /* UIWindow+Extension.swift */; };
 		96BD63962992DAFA000CFCF7 /* ColorSchemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63952992DAF9000CFCF7 /* ColorSchemeManager.swift */; };
 		96BD639829930478000CFCF7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD639729930478000CFCF7 /* SettingsView.swift */; };
+		96BD63A22993456D000CFCF7 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63A12993456D000CFCF7 /* HelpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		96BD63932992D4E9000CFCF7 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		96BD63952992DAF9000CFCF7 /* ColorSchemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSchemeManager.swift; sourceTree = "<group>"; };
 		96BD639729930478000CFCF7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		96BD63A12993456D000CFCF7 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				96BD638B29919F66000CFCF7 /* ToastView.swift */,
 				96BD63912991B538000CFCF7 /* StatsView.swift */,
 				96BD639729930478000CFCF7 /* SettingsView.swift */,
+				96BD63A12993456D000CFCF7 /* HelpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				96BD63862989B7AD000CFCF7 /* Shake.swift in Sources */,
 				96606D0F2988CC7C0045362C /* WordleDataModel.swift in Sources */,
 				96606C9C29887BA60045362C /* WordleApp.swift in Sources */,
+				96BD63A22993456D000CFCF7 /* HelpView.swift in Sources */,
 				96BD63942992D4E9000CFCF7 /* UIWindow+Extension.swift in Sources */,
 				96606D112988D5AB0045362C /* Global.swift in Sources */,
 				96BD63922991B538000CFCF7 /* StatsView.swift in Sources */,
